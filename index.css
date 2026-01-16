@@ -195,12 +195,14 @@ nav {
 }
 
 .nav-links a {
-  font-weight: 500;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: #4b5563;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--primary);
+  font-weight: 700;
 }
 
 /* Hero Section */

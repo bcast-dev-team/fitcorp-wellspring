@@ -19,7 +19,7 @@
            <img src="assets/logo.png" alt="FITCORP Wellspring Logo">
           </a>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="corporate-solutions.html">Corporate Solutions</a></li>
@@ -46,10 +46,8 @@
               <span class="text-primary">Corporate Wellness</span> for a
               Healthier Workforce
             </h1>
-            <p class="text-muted">
-              Transform your organization with holistic wellness programs
-              designed to enhance employee health, boost productivity, and
-              create thriving workplace cultures.
+            <p style="font-size: 1rem; color: #4b5563; line-height: 1.2; width: 86%;">
+              Transform your organization with holistic wellness programs designed to enhance employee health, boost productivity, and create thriving workplace cultures.
             </p>
             <div class="hero-btns">
               <a href="#services" class="btn btn-primary">Explore Services</a>
@@ -58,13 +56,18 @@
               >
             </div>
           </div>
-          <div class="hero-img-wrapper">
-            <img
-              src="assets/meditation.png"
-              alt="Modern Corporate Office"
-              class="hero-img"
-            />
-            <div class="floating-card">
+          <div class="hero-img-column" style="position: relative">
+            <div class="hero-img-wrapper" style="border-radius: 40px; overflow: hidden; box-shadow: var(--shadow-xl);">
+              <img
+                src="assets/meditation.png"
+                alt="Modern Corporate Office"
+                class="hero-img"
+                style="height: 600px; width: 100%; object-fit: cover;"
+              />
+            </div>
+            
+            <!-- Floating Card 1: Bottom Left -->
+            <div class="floating-card" style="bottom: 40px; left: -30px;">
               <div class="stat-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +76,7 @@
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
+                  stroke-width="2.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="lucide lucide-heart"
@@ -83,15 +86,30 @@
                   />
                 </svg>
               </div>
-              <div>
-                <p style="font-size: 1.5rem; font-weight: 700; margin: 0">
+              <div style="min-width: 140px;">
+                <p style="font-size: 1.6rem; font-weight: 800; margin: 0; color: #1a1a1a; line-height: 1.2;">
                   95%
                 </p>
-                <p style="font-size: 0.8rem; color: #666; margin: 0">
+                <p style="font-size: 0.85rem; color: #4b5563; margin: 0; font-weight: 500;">
                   Satisfaction Rate
                 </p>
               </div>
             </div>
+
+            <!-- Floating Card 2: Top Right -->
+            <!-- <div class="floating-card" style="top: 40px; right: -30px; bottom: auto; left: auto; animation-delay: -2s;">
+              <div class="stat-icon" style="background: #ecfdf5; color: #059669;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <div style="min-width: 140px;">
+                <p style="font-size: 1.6rem; font-weight: 800; margin: 0; color: #1a1a1a; line-height: 1.2;">
+                  500+
+                </p>
+                <p style="font-size: 0.85rem; color: #4b5563; margin: 0; font-weight: 500;">
+                  Wellness Programs
+                </p>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
