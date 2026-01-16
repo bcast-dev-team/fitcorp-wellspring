@@ -784,7 +784,7 @@ nav {
   background: #111111;
   color: var(--white);
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0 0 0;
 }
 
 .cta h2 {
