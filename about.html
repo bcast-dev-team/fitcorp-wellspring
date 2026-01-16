@@ -14,14 +14,18 @@
           <a href="index.html" class="logo">
             <img src="assets/logo.png" alt="FITCORP Wellspring Logo">
           </a>
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="corporate-solutions.html">Corporate Solutions</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li class="mobile-only"><a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; color: white;">Get Started</a></li>
                 </ul>
-          <a href="#contact" class="get-started">
+                <div class="menu-btn" id="menuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </div>
+          <a href="contact.html" class="get-started">
             Get Started
           </a>
         </nav>
@@ -56,7 +60,7 @@
     </section>
 
     <!-- Vision & Mission -->
-    <section style="background: #f9fafb; padding: 60px 0;">
+    <section class="vm-section">
         <div class="container">
             <div class="vision-mission-grid">
                 <div class="vm-card">
@@ -81,8 +85,8 @@
     <section class="principles-section">
         <div class="container">
             <span class="badge">OUR VALUES</span>
-            <h2 style="font-size: 3rem; font-weight: 700;">The Principles That Guide Us</h2>
-            <p style="color: #6b7280; margin-bottom: 3rem; font-weight: 300;">These core values shape every program we design and every partnership we build.</p>
+            <h2>The Principles That Guide Us</h2>
+            <p class="section-subtitle">These core values shape every program we design and every partnership we build.</p>
             
             <div class="principles-grid">
                 <div class="principle-card">
@@ -130,9 +134,9 @@
         <div class="container">
             <div class="why-about-grid">
                 <div class="why-about-content">
-                    <span class="badge" style="background: #fdf2f2; padding: 0.5rem 1rem; border-radius: 50px; text-transform: none; letter-spacing: normal;">✔ What Sets Us Apart</span>
-                    <h2 style="font-size: 3.2rem; font-weight: 700; margin: 1.5rem 0;">Why Organizations Choose FITCORP</h2>
-                    <p style="color: #4b5563; font-weight: 300; line-height: 1.6;">We go beyond traditional wellness programs to deliver comprehensive, results-driven solutions that create meaningful change.</p>
+                    <span class="badge badge-check">✔ What Sets Us Apart</span>
+                    <h2>Why Organizations Choose FITCORP</h2>
+                    <p>We go beyond traditional wellness programs to deliver comprehensive, results-driven solutions that create meaningful change.</p>
                     
                     <div class="why-about-list">
                         <div class="why-about-item">
@@ -160,7 +164,7 @@
                        Ongoing support and program optimization
                         </div>
                     </div>
-                    <a href="#" class="btn-cta-primary" style="display: inline-block;">Explore Our Solutions</a>
+                    <a href="corporate-solutions.html" class="btn btn-cta-primary">Explore Our Solutions</a>
                 </div>
                 
                 <div class="about-stats-grid">
@@ -191,8 +195,8 @@
             <h2>Ready to Partner with Us?</h2>
             <p>Discover how FITCORP can transform your organization's approach to employee wellness.</p>
             <div class="cta-btns">
-                <a href="#" class="btn-cta-primary">Get in Touch</a>
-                <a href="#" class="btn-cta-outline">View Our Services</a>
+                <a href="contact.html" class="btn btn-cta-primary">Get in Touch</a>
+                <a href="services.html" class="btn btn-cta-outline">View Our Services</a>
             </div>
         </div>
     </section>
@@ -277,5 +281,20 @@
         </div>
       </div>
     </footer>
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
