@@ -435,21 +435,28 @@ nav {
 
 /* About Page Specific Styles */
 .about-hero {
-  padding: 120px 0 60px;
+  padding: 200px  60px;
   text-align: center;
   background: var(--bg-light);
 }
 
 .about-hero h1 {
-  font-size: 4rem;
-  margin-top: 1rem;
+ font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
 .about-hero p {
   max-width: 800px;
-  margin: 1.5rem auto 0;
-  font-size: 1.2rem;
+   max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.14rem;
   color: var(--text-muted);
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 .story-section {
@@ -597,6 +604,160 @@ nav {
 .about-stat-box p {
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+/* Services Page Styles */
+.services-hero {
+  padding: 200px  60px;
+  background: var(--bg-light);
+  text-align: center;
+}
+
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1.1rem;
+  background-color: #ffe8e8;
+  color: var(--primary);
+  border-radius: 50px;
+  font-size: 0.98rem;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.services-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.services-hero p {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.14rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.service-row {
+  padding: 90px 0;
+}
+
+.service-row.alternate {
+  background: #f9fafb;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.service-img img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.icon-sq {
+  width: 48px;
+  height: 48px;
+  background: #fef2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  margin-bottom: 1.8rem;
+}
+
+.service-content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #111827;
+}
+
+.service-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin-bottom: 1.8rem;
+  font-weight: 300;
+}
+
+.checklist {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 300;
+}
+
+.checklist li svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.btn-service {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.btn-service:hover {
+  background: #b51c22;
+  transform: translateY(-2px);
+}
+
+.custom-needs {
+  padding: 100px 0;
+  background: #fff8f8;
+}
+
+.custom-needs h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.custom-needs p {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.custom-needs .btn-cta-outline {
+  color: var(--secondary);
+  border-color: #e5e7eb;
+}
+
+.custom-needs .btn-cta-outline:hover {
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 /* CTA Section */
