@@ -19,14 +19,18 @@
                 <a href="index.html" class="logo">
                     <img src="assets/logo.png" alt="FITCORP Logo">
                 </a>
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html" class="active">Our Services</a></li>
                     <li><a href="corporate-solutions.html">Corporate Solutions</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li class="mobile-only"><a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; color: white;">Get Started</a></li>
                 </ul>
-                <a href="#" class="get-started">Get Started</a>
+                <div class="menu-btn" id="menuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </div>
+                <a href="contact.html" class="get-started">Get Started</a>
             </nav>
         </div>
     </header>
@@ -188,8 +192,8 @@
             <h2>Don't See What You Need?</h2>
             <p>Every organization is unique. Our team can design custom wellness programs tailored specifically to your company's culture, challenges, and goals.</p>
             <div class="cta-btns">
-                <a href="#" class="btn-cta-primary">View Corporate Solutions</a>
-                <a href="#" class="btn-cta-outline-dark">Request Custom Program</a>
+                <a href="corporate-solutions.html" class="btn btn-cta-primary">View Corporate Solutions</a>
+                <a href="contact.html" class="btn btn-cta-outline-dark">Request Custom Program</a>
             </div>
         </div>
     </section>
@@ -285,5 +289,20 @@
         </div>
       </div>
     </footer>
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

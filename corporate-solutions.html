@@ -317,19 +317,71 @@
 
         @media (max-width: 1024px) {
             .solutions-grid { grid-template-columns: 1fr 1fr; }
-            .process-grid { grid-template-columns: 1fr 1fr; }
+            .process-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
             .process-grid::after { display: none; }
             .features-grid { grid-template-columns: 1fr; gap: 4rem; }
             .corp-hero h1 { font-size: 3rem; }
         }
 
         @media (max-width: 768px) {
-            .solutions-grid { grid-template-columns: 1fr; }
-            .process-grid { grid-template-columns: 1fr; }
+            .solutions-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .process-grid { grid-template-columns: 1fr; gap: 2.5rem; }
             .features-checklist { grid-template-columns: 1fr; }
-            .features-stats { grid-template-columns: 1fr; }
+            .features-stats { grid-template-columns: 1fr 1fr; }
             .proposal-btns { flex-direction: column; align-items: center; }
             .corp-hero h1 { font-size: 2.5rem; }
+            .feature-stat-box { padding: 1.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            .corp-hero { padding: 80px 0 40px; }
+            .corp-hero h1 { font-size: 1.8rem; line-height: 1.2; margin-bottom: 0.75rem; }
+            .corp-hero p { font-size: 0.9rem; line-height: 1.4; }
+            
+            .solutions-section, .process-section, .features-section, .proposal-section {
+                padding: 40px 0;
+            }
+
+            .section-header h2 { font-size: 1.6rem !important; }
+            .section-header p { font-size: 0.9rem; margin-bottom: 1.5rem; }
+
+            .solution-card { padding: 1.5rem; }
+            .solution-icon-box { margin-bottom: 1.25rem; width: 48px; height: 48px; }
+            .solution-card h3 { font-size: 1.25rem; }
+            .solution-card p { font-size: 0.88rem; margin-bottom: 1.5rem; }
+            .solution-bullets li { font-size: 0.85rem; }
+
+            .process-grid { margin-top: 3rem; }
+            .process-icon-circle { width: 60px; height: 60px; margin-bottom: 1.5rem; }
+            .process-icon-circle svg { width: 22px; height: 22px; }
+            .process-item h3 { font-size: 1.2rem; }
+            .process-item p { font-size: 0.85rem; }
+
+            .features-content h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+            .features-content p { font-size: 0.9rem; }
+            .feature-check-item { font-size: 0.85rem; }
+            
+            .features-stats { grid-template-columns: 1fr; gap: 1rem; margin-top: 2rem; }
+            .feature-stat-box { padding: 1.25rem; text-align: center; }
+            .feature-stat-box h2 { font-size: 2.22rem; }
+            .feature-stat-box p { font-size: 0.8rem; }
+
+            .proposal-section h2 { font-size: 1.5rem; }
+            .proposal-section p { font-size: 0.88rem; margin-bottom: 1.5rem; }
+            .btn-proposal-red, .btn-proposal-outline {
+                width: 100%;
+                padding: 0.75rem 1.5rem;
+                justify-content: center;
+                font-size: 0.9rem;
+                display: flex;
+                border-radius: 8px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .corp-hero h1 { font-size: 1.6rem; }
+            .feature-stat-box h2 { font-size: 1.8rem; }
+            .process-item p { padding: 0; }
         }
     </style>
 </head>
@@ -341,14 +393,18 @@
                 <a href="index.html" class="logo">
                     <img src="assets/logo.png" alt="FITCORP Logo">
                 </a>
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="corporate-solutions.html" class="active">Corporate Solutions</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li class="mobile-only"><a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; color: white;">Get Started</a></li>
                 </ul>
-                <a href="#" class="get-started">Get Started</a>
+                <div class="menu-btn" id="menuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </div>
+                <a href="contact.html" class="get-started">Get Started</a>
             </nav>
         </div>
     </header>
@@ -637,5 +693,20 @@
           </div>
         </div>
       </footer>
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

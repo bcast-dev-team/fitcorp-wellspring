@@ -1101,6 +1101,12 @@ footer {
     gap: 3rem;
   }
 
+  .services-hero { padding: 120px 0 60px; }
+  .services-hero h1 { font-size: 2.8rem; }
+  .service-row { padding: 60px 0; }
+  .icon-sq { margin-bottom: 1.25rem; }
+  .service-content h2 { font-size: 1.8rem; }
+
   .about-stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -1268,8 +1274,64 @@ footer {
     padding: 1.5rem 1rem;
   }
 
-  .cta h2 {
+  .cta h2, .custom-needs h2 {
+    font-size: 1.5rem;
+  }
+
+  .services-hero {
+    padding: 80px 0 40px;
+  }
+
+  .services-hero h1 {
     font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .badge-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .services-hero p, .custom-needs p {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-row, .custom-needs {
+    padding: 35px 0;
+  }
+
+  .service-content h2 {
+    font-size: 1.45rem !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-content p {
+    font-size: 0.88rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-img img {
+    height: 220px !important;
+    object-fit: cover;
+  }
+
+  .icon-sq {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0.75rem;
+  }
+
+  .checklist li {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-service {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
   }
 
   .about-stats-grid {
@@ -1282,8 +1344,8 @@ footer {
   }
 
   .cta p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 0.88rem;
+    margin-bottom: 1.5rem;
   }
 
   .footer-grid {
