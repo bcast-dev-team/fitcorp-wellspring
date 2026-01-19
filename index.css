@@ -617,14 +617,7 @@ nav {
   background: var(--bg-light);
 }
 
-.about-hero h1 {
- font-size: 3.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  color: #111827;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-}
+
 
 .about-hero p {
   max-width: 800px;
@@ -825,7 +818,7 @@ nav {
   letter-spacing: 0.01em;
 }
 
-.services-hero h1 {
+.hero-h1 {
   font-size: 3.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -1269,7 +1262,7 @@ footer {
   }
 
   .services-hero { padding: 120px 0 60px; }
-  .services-hero h1 { font-size: 2.8rem; }
+
   .service-row { padding: 60px 0; }
   .icon-sq { margin-bottom: 1.25rem; }
   .service-content h2 { font-size: 1.8rem; }
@@ -1449,10 +1442,7 @@ footer {
     padding: 80px 0 40px;
   }
 
-  .services-hero h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.75rem;
-  }
+  
 
   .badge-tag {
     padding: 0.3rem 0.6rem;
@@ -1523,10 +1513,6 @@ footer {
     padding: 80px 0 40px;
   }
 
-  .about-hero h1 {
-    font-size: 2.1rem;
-    margin-bottom: 1rem;
-  }
 
   .vm-section, .principles-section, .why-choose-about {
     padding: 40px 0;
@@ -1589,7 +1575,6 @@ footer {
 
 /* Extra Small Screens (360px) */
 @media (max-width: 360px) {
-  h1, .about-hero h1 { font-size: 1.8rem; }
   h2 { font-size: 1.5rem; }
   .hero-img, .mission-img, .story-img-wrapper img { height: 200px !important; }
   .story-content h2 { font-size: 1.4rem !important; }
