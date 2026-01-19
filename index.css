@@ -103,7 +103,7 @@ h3 {
   border: none;
 }
 .get-started {
- display: inline-flex;
+  display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
   border-radius: 9px;
@@ -112,14 +112,40 @@ h3 {
   cursor: pointer;
   transition: var(--transition);
   border: none;
-   background-color: var(--primary);
+  background-color: var(--primary);
   color: var(--white);
 }
 
 .get-started:hover {
   background-color: #ea2425;
   transform: translateY(-1px);
-  /* box-shadow: 0 5px 15px rgba(204, 31, 38, 0.3); */
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition);
+  background-color: #25D366; /* WhatsApp Green */
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.whatsapp-btn:hover {
+  background-color: #20BA5A;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+  color: white;
+}
+
+.whatsapp-btn svg {
+  fill: currentColor;
 }
 
 .btn-primary {
@@ -1213,8 +1239,15 @@ footer {
   .mobile-only {
     display: block;
   }
+  
+  .mobile-only .whatsapp-btn {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
 
-  .get-started {
+  nav > .whatsapp-btn, .get-started {
     display: none;
   }
 
