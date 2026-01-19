@@ -8,6 +8,8 @@
       name="description"
       content="Empowering Corporate Wellness for a healthier, more productive workforce. Holistic programs designed for thriving workplace cultures."
     />
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -20,7 +22,7 @@
           </a>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                     
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="corporate-solutions.html">Corporate Solutions</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -43,7 +45,7 @@
           <div class="hero-content">
             <div class="hero-badge">
               <span class="dot"></span>
-              Corporate Wellness Excellence
+              Corporate Fitness Program
             </div>
             <h1>
               Empowering
@@ -51,12 +53,11 @@
               Healthier Workforce
             </h1>
             <p style="font-size: 1.1rem; color: #4b5563; line-height: 1.6; max-width: 600px; margin-bottom: 2rem;">
-              Transform your organization with holistic wellness programs designed to enhance employee health, boost productivity, and create thriving workplace cultures.
-            </p>
+Transform your organization with holistic wellness programs designed to enhance employee health, boost productivity, and create thriving workplace cultures.            </p>
             <div class="hero-btns">
-              <a href="#services" class="btn btn-primary">Explore Services</a>
-              <a href="#contact" class="btn btn-outline"
-                >Schedule Consultation</a
+              <a href="/services.html" class="btn btn-primary">Explore Services</a>
+              <a href="/contact.html" class="btn btn-outline"
+                >Talk to Us</a
               >
             </div>
           </div>
@@ -119,31 +120,72 @@
       </div>
     </section>
 
-    <!-- Stats Strip -->
-    <div class="stats-strip">
-      <div class="container text-center">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <h2>500+</h2>
-            <p>Corporate Clients</p>
+    <!-- Motivation Section -->
+    <section class="motivation-section">
+      <div class="container">
+        <div class="motivation-header">
+          <p class="motivation-subtitle">Your team doesn't need <br/> more motivation they need better</p>
+        </div>
+        <div class="motivation-grid">
+          <div class="motivation-image-wrapper">
+            <img src="assets/officeFitness.png" alt="Team Stretching" class="motivation-image" />
           </div>
-          <div class="stat-item">
-            <h2>95%</h2>
-            <p>Client Satisfaction</p>
-          </div>
-          <div class="stat-item">
-            <h2>1M+</h2>
-            <p>Employees Impacted</p>
-          </div>
-          <div class="stat-item">
-            <h2>12+</h2>
-            <p>Years Experience</p>
+          <div class="motivation-content">
+            <h2 class="motivation-title">
+              ENERGY,<br />
+              CLARITY &<br />
+              RECOVERY
+            </h2>
           </div>
         </div>
+        <!-- <div class="motivation-footer">
+          <img src="assets/logo.png" alt="FITCORP Logo" class="motivation-small-logo" />
+        </div> -->
       </div>
-    </div>
+    </section>
 
-    <!-- Mission Section -->
+    <!-- Fatigue Section -->
+    <section class="fatigue-section">
+      <div class="container">
+        <div class="fatigue-grid">
+          <div class="fatigue-main">
+            <h1>The real cost of <span>workplace fatigue</span></h1>
+            <p class="fatigue-subtitle">
+              modern workplaces look efficient from outside but inside, hidden fatigue is silently reducing focus, energy, and productivity.
+            </p>
+            
+            <div class="fatigue-content-block" style="width: 100%; flex-direction: column; display: flex; align-items: right; justify-content: right; align-self: right; justify-self: right;">
+              <span class="block-title">Fatigue costs companies more than they realize:</span>
+              <p><strong>30–40% drop in productivity</strong> due to mental exhaustion</p>
+              <p><strong>Higher absenteeism & sick leaves</strong> (back pain, headaches, stress)</p>
+              <p><strong>Low engagement</strong> &rarr; reduced teamwork & morale</p>
+              <p><strong>Decline in decision quality</strong> due to cognitive fatigue</p>
+              <p><strong>Hiring and turnover costs rise</strong> because burnt-out staff leave</p>
+            </div>
+          </div>
+          
+          <div class="fatigue-aside">
+            <div class="who-box">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/WHO_logo.svg/1200px-WHO_logo.svg.png" alt="World Health Organization" class="who-logo">
+              <p class="who-quote">
+                "Depression and anxiety cost the global economy US $ 1 trillion each year — due overwhelmingly to lost productivity."
+              </p>
+            </div>
+            
+          
+          </div>
+        </div>
+        <div class="fatigue-content-block-2">
+        <span class="block-title">Fatigue is no longer occasional — it's daily, silent, and spreading.</span>
+        <p>Employees sit <strong>8–10 hours</strong> a day</p>
+        <p>Long screen time causes cognitive overload</p>
+        <p>Poor posture creates physical stress</p>
+        <p>Fast-paced deadlines drain mental energy</p>
+        <p>Nutritional habits collapse under work pressure</p>
+      </div>
+        </div>
+    </section>
+
     <section id="about" class="section">
       <div class="container">
         <div class="mission-grid">
@@ -171,10 +213,7 @@
             <span class="badge">Our Mission</span>
             <h2 class="mission-title">Building Healthier Organizations, One Employee at a Time</h2>
             <p class="mission-content-description text-muted">
-              At FITCORP, we believe that employee wellness is the foundation of
-              organizational success. Our comprehensive programs are designed to
-              address the unique challenges of modern workplaces, creating
-              environments where people thrive professionally and personally.
+             At FITCORP, we believe that employee wellness is the foundation of organizational success. Our comprehensive programs are designed to address the unique challenges of modern workplaces, creating environments where people thrive professionally and personally.
             </p>
             <ul class="check-list">
               <li class="check-item">
@@ -258,7 +297,7 @@
                 Expert-led sessions
               </li>
             </ul>
-            <a href="#" class="btn btn-primary">Learn More About Us</a>
+            <a href="/contact.html" class="btn btn-primary">Learn More About Us</a>
           </div>
         </div>
       </div>
@@ -268,126 +307,81 @@
     <section id="pillars" class="section pillars">
       <div class="container">
         <div class="section-header">
-          <span class="badge">Our Approach</span>
-          <h2>The Four Pillars of Corporate Wellness</h2>
-          <p class="pillar-description">
-            Our holistic approach addresses all dimensions of employee
-            well-being for lasting organizational impact.
+          <span class="badge">Our Methodology</span>
+          <h2>The Three Pillars of Corporate Wellness</h2>
+          <p class="pillar-description" style="font-weight: 300; color: #4b5563;">
+            Our science-driven method is designed specifically for the modern corporate environment, targeting the root causes of workplace fatigue.
           </p>
         </div>
-        <div class="pillars-grid">
-          <div class="pillar-card">
-            <div class="pillar-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-brain"
-              >
-                <path
-                  d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .52 8.105 3.001 3.001 0 0 0 5.527.127"
-                />
-                <path
-                  d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.52 8.105 3.001 3.001 0 0 1-5.527.127"
-                />
-                <path d="M12 7v14" />
-                <path d="M9 11h6" />
-                <path d="M9 15h6" />
-              </svg>
-            </div>
-            <h3 class="pillar-card-title">Mental Wellness</h3>
-            <p class="pillar-card-text">
-              Cognitive resilience, stress reduction, and mindfulness practices
-              for sharper focus.
+        
+        <div class="method-grid">
+          <!-- Pillar 1: Mental Wellness -->
+          <div class="method-block">
+            <h3 class="method-header">neuro-centered mental wellness</h3>
+            <span class="method-tagline">improve clarity, reduce stress, prevent burnout.</span>
+            <p class="method-description">
+              fatigue begins in the brain before it shows in the body. fitcorp teaches employees how to regulate stress, reset mental energy, and strengthen focus.
             </p>
+            
+            <span class="deliver-label">what we deliver:</span>
+            <ul class="method-list">
+              <li>cognitive fatigue management</li>
+              <li>stress rewiring techniques</li>
+              <li>micro-mindfulness practices</li>
+              <li>emotional balance strategies</li>
+              <li>focus & attention optimization</li>
+            </ul>
+            
+            <div class="method-outcome-box">
+              <span class="method-label">outcome:</span>
+              <p class="method-outcome-text">employees feel calmer, sharper, and more productive throughout the day.</p>
+            </div>
           </div>
-          <div class="pillar-card">
-            <div class="pillar-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-heart"
-              >
-                <path
-                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                />
-              </svg>
-            </div>
-            <h3 class="pillar-card-title">Emotional Health</h3>
-            <p class="pillar-card-text">
-              Building emotional intelligence and fostering supportive workplace
-              relationships.
+
+          <!-- Pillar 2: Nutritional Intelligence -->
+          <div class="method-block">
+            <h3 class="method-header">nutritional intelligence for desk workers</h3>
+            <span class="method-tagline">energy starts with food — especially for sedentary professionals.</span>
+            <p class="method-description">
+              we simplify nutrition using science-backed guidance tailored to corporate lifestyles.
             </p>
+            
+            <span class="deliver-label">what we deliver:</span>
+            <ul class="method-list">
+              <li>daily energy optimization</li>
+              <li>practical office-friendly diet habits</li>
+              <li>anti-fatigue hydration routines</li>
+              <li>gut-brain performance education</li>
+              <li>metabolic correction for desk workers</li>
+            </ul>
+            
+            <div class="method-outcome-box">
+              <span class="method-label">outcome:</span>
+              <p class="method-outcome-text">employees maintain stable energy, reduced brain fog, and better metabolic health.</p>
+            </div>
           </div>
-          <div class="pillar-card">
-            <div class="pillar-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-dumbbell"
-              >
-                <path d="M6.5 6.5 4 9" />
-                <path d="M15 15l2.5 2.5" />
-                <path d="m3 21 6-6" />
-                <path d="m15 9 6-6" />
-                <path d="M3.5 16.5 16.5 3.5" />
-                <path d="M7.5 20.5 20.5 7.5" />
-                <path d="M15 15l6-6" />
-                <path d="m3 21 6-6" />
-                <path d="M9 15h6v-6H9v6Z" />
-              </svg>
-            </div>
-            <h3 class="pillar-card-title">Physical Fitness</h3>
-            <p class="pillar-card-text">
-              Active lifestyle programs, ergonomic solutions, and movement
-              integration.
+
+          <!-- Pillar 3: Physical Activation -->
+          <div class="method-block">
+            <h3 class="method-header">physical activation inside work hours</h3>
+            <span class="method-tagline">small movements &rarr; big improvements.</span>
+            <p class="method-description">
+              employees sit for long hours. fitcorp integrates movement without disrupting work.
             </p>
-          </div>
-          <div class="pillar-card">
-            <div class="pillar-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-leaf"
-              >
-                <path
-                  d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
-                />
-                <path d="M2 21c0-3 1.85-5.36 5.08-6C10.9 14.36 12 12 14 12" />
-              </svg>
+            
+            <span class="deliver-label">what we deliver:</span>
+            <ul class="method-list">
+              <li>micro-movement routines</li>
+              <li>posture correction modules</li>
+              <li>mobility drills for stiff muscles</li>
+              <li>desk-friendly strength activation</li>
+              <li>pain reduction techniques for neck, back & shoulders</li>
+            </ul>
+            
+            <div class="method-outcome-box">
+              <span class="method-label">outcome:</span>
+              <p class="method-outcome-text">improved posture, reduced stiffness, and higher physical energy throughout the workday.</p>
             </div>
-            <h3 class="pillar-card-title">Lifestyle Balance</h3>
-            <p class="pillar-card-text">
-              Nutrition guidance, sleep optimization, and sustainable healthy
-              habits.
-            </p>
           </div>
         </div>
       </div>
@@ -500,7 +494,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="contact" class="section cta">
+    <section id="contact" class="section cta" style="background-color: #000;">
       <div class="container">
         <h2>Ready to Transform Your Workplace?</h2>
         <p>
@@ -527,23 +521,20 @@
             <div class="footer-contact">
               <div class="contact-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                hello@fitcorp.com
+                  info@fitcorp.in
               </div>
               <div class="contact-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                +1 (234) 567-890
+                 +91 96459 86442
               </div>
-              <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                123 Wellness Street, Health City
-              </div>
+               
             </div>
           </div>
 
           <div class="footer-col">
             <h4>Company</h4>
             <div class="footer-links">
-              <a href="about.html">About Us</a>
+                
               <a href="services.html">Our Services</a>
               <a href="corporate-solutions.html">Corporate Solutions</a>
               <a href="contact.html">Contact</a>
