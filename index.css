@@ -26,7 +26,7 @@
 }
 
 .text-muted {
-    color: var(--text-muted);
+    color: #6b7280;
     font-weight: 300;
     color: #4c4b4b;
 }
@@ -213,7 +213,7 @@ nav {
 
 @media (max-width: 768px) {
   .logo img {
-    height: 32px; /* Slightly smaller on mobile */
+    height: 80px; /* Slightly smaller on mobile */
   }
 }
 
@@ -251,7 +251,7 @@ nav {
 
 /* Hero Section */
 .hero {
-  padding-top: 160px;
+  padding-top: 130px;
   padding-bottom: 100px;
   background: white;
   min-height: 100vh;
@@ -302,10 +302,59 @@ nav {
   box-shadow: var(--shadow-lg);
 }
 
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 280px;
+  }
+}
+
+.slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out, transform 8s linear;
+  transform: scale(1);
+}
+
+.slider-img.active {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 1;
+}
+
 .hero-img {
   width: 100%;
-  height: 550px;
+  height: 600px;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-img {
+    height: 280px;
+  }
 }
 
 .floating-card {
@@ -319,6 +368,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
+  z-index: 10;
   animation: float 4s ease-in-out infinite;
 }
 
@@ -336,7 +386,7 @@ nav {
 /* Motivation Section */
 .motivation-section {
   background: var(--white);
-  padding: 100px 0 0 0;
+  padding: 10px 0 50px 0;
   color: var(--secondary);
   /* font-family: 'Outfit', sans-serif; */
 }
@@ -369,7 +419,7 @@ nav {
 }
 
 .motivation-content {
-  padding-left: 3rem;
+  padding-left: 1.5rem;
 }
 
 .motivation-title {
@@ -395,28 +445,29 @@ nav {
   filter: grayscale(100%) brightness(0);
 }
 
-@media (max-width: 1200px) {
-  .motivation-title {
-    font-size: 5rem;
-  }
-  .motivation-subtitle {
-    font-size: 2.5rem;
-  }
-}
-
 @media (max-width: 992px) {
   .motivation-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 1rem;
   }
   .motivation-content {
     padding-left: 0;
   }
   .motivation-title {
     font-size: 4.5rem;
+    text-align: start;
+    margin-bottom: 1rem;
   }
   .motivation-footer {
     margin-top: 2rem;
+  }
+  .motivation-section {
+    padding: 4px 0 2px;
+  }
+  .motivation-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
   }
 }
 
@@ -428,13 +479,24 @@ nav {
     font-size: 3.5rem;
   }
   .motivation-image {
-    height: 400px;
+    height: 350px;
   }
 }
 
+@media (max-width: 480px) {
+  .motivation-subtitle {
+    font-size: 1.5rem;
+  }
+  .motivation-title {
+    font-size: 2.5rem;
+  }
+  .motivation-image {
+    height: 250px;
+  }
+}
 /* Mission Section */
 .section {
-  padding: 100px 0;
+  padding: 50px 0 80px 0;
 }
 
 .mission-title {
@@ -467,7 +529,7 @@ nav {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 1rem;
   display: block;
   margin-bottom: 1rem;
 }
@@ -492,14 +554,14 @@ nav {
 
 /* Pillars Section */
 .pillars {
-  padding: 100px 0;
+  padding: 50px 0 50px 0;
   background: var(--white);
 }
 
 .section-header {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 5rem;
+  margin: 0 auto 2rem;
 }
 
 .method-grid {
@@ -515,8 +577,8 @@ nav {
 }
 
 .method-header {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1.7rem;
+  font-weight: 600;
   color: #000000;
   line-height: 1.1;
   margin-bottom: 0.6rem;
@@ -624,7 +686,7 @@ nav {
    max-width: 680px;
   margin: 0 auto;
   font-size: 1.14rem;
-  color: var(--text-muted);
+  color: #6b7280;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -794,12 +856,12 @@ nav {
 
 .about-stat-box p {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: #6b7280;
 }
 
 /* Services Page Styles */
 .services-hero {
-  padding: 200px  60px;
+  padding: 150px  60px;
   background: var(--bg-light);
   text-align: center;
 }
@@ -828,16 +890,16 @@ nav {
 }
 
 .services-hero p {
-  max-width: 680px;
-  margin: 0 auto;
-  font-size: 1.14rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-  font-weight: 300;
-}
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            color: #6b7280;
+            line-height: 1.6;
+            font-weight: 400;
+        }
 
 .service-row {
-  padding: 90px 0;
+  padding: 50px 0 50px 0;
 }
 
 .service-row.alternate {
@@ -925,7 +987,7 @@ nav {
   flex-direction: column;
   align-items: center;
    text-align: center;
-  padding: 100px 0;
+  padding: 50px 0 50px 0;
   background: #fbeaea;
 }
 
@@ -972,7 +1034,7 @@ nav {
 
 /* CTA Section */
 .cta {
-  background: #111111;
+  background: #000;
   color: var(--white);
   text-align: center;
   padding: 50px 0 0 0;
@@ -1037,19 +1099,19 @@ nav {
 footer {
   background: #000;
   color: var(--white);
-  padding: 100px 0 50px;
+  padding: 50px 0 50px;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-  gap: 4rem;
-  margin-bottom: 4rem;
+  grid-template-columns: 2.5fr 1fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-logo img {
-  height: 50px;
-  margin-bottom: 1.5rem;
+  height: 130px;
+  margin-bottom: 1rem;
 }
 
 .footer-desc {
@@ -1119,7 +1181,7 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -1246,7 +1308,11 @@ footer {
 
   /* Structural Changes */
   .section, .vm-section, .principles-section, .why-choose-about {
-    padding: 60px 0;
+    padding: 0px 0 0px;
+  }
+  
+  footer {
+    padding: 0px 0 0px;
   }
 
   .hero {
@@ -1324,10 +1390,21 @@ footer {
   .footer-grid {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 2rem;
   }
 
-  .footer-desc, .footer-contact {
+  .footer-logo img {
+    margin: 0 auto 1rem;
+    height: 100px;
+  }
+
+  .footer-desc {
     margin: 0 auto;
+  }
+
+  .footer-contact {
+    margin: 0 auto;
+    align-items: center;
   }
 
   .social-links {
@@ -1593,7 +1670,7 @@ footer {
 
 /* Fatigue Section */
 .fatigue-section {
-  padding: 100px 0 0 0;
+  padding: 50px 0 50px 0;
   background: var(--white);
   color: #000000;
 }
@@ -1625,8 +1702,15 @@ footer {
   margin-bottom: 1.2rem;
   line-height: 1.3;
 }
-.fatigue-content-block-2{
-margin-left: 40rem;
+.fatigue-content-block-2 {
+  max-width: 500px;
+  margin-left: auto;
+}
+@media (max-width: 1200px) {
+  .fatigue-content-block-2 {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 
 .fatigue-content-block , .fatigue-content-block-2{
@@ -1664,7 +1748,7 @@ margin-left: 40rem;
 .fatigue-aside {
   display: flex;
   flex-direction: column;
-  gap: 18rem;
+  gap: 4rem;
   text-align: right;
 }
 
@@ -1710,23 +1794,63 @@ margin-left: 40rem;
 }
 
 @media (max-width: 992px) {
+  .fatigue-section {
+    padding: 3px 0;
+  }
   .fatigue-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 0rem;
   }
   .fatigue-aside {
-    text-align: left;
-    align-items: flex-start;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
   }
   .who-box {
-    align-items: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
   }
   .who-quote {
-    margin-left: 0;
-    text-align: left;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
   }
   .fatigue-main h1 {
     font-size: 2.5rem;
+  }
+  .fatigue-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fatigue-main h1 {
+    font-size: 2rem;
+  }
+  .fatigue-subtitle {
+    font-size: 1.1rem;
+  }
+  .fatigue-content-block, .fatigue-content-block-2 {
+    padding-left: 1.5rem;
+  }
+  .fatigue-content-block p, .fatigue-content-block-2 p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+/* Small Screens Adjustments for Headers */
+@media (max-width: 768px) {
+  .pillars .section-header {
+    text-align: left;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .method-header {
+    font-size: 1.35rem;
+    text-align: left;
   }
 }
 
