@@ -533,6 +533,12 @@ nav {
   display: block;
   margin-bottom: 1rem;
 }
+@media (max-width: 480px){
+  .badge{
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+  }
+}
 
 .check-list {
   margin: 2rem 0;
