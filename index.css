@@ -272,13 +272,15 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   background: var(--primary-light);
   color: var(--primary);
   border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .hero-badge .dot {
@@ -528,9 +530,10 @@ nav {
   color: var(--primary);
   letter-spacing: 2px;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.15rem;
   display: block;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 @media (max-width: 480px){
   .badge{
@@ -584,7 +587,7 @@ nav {
 .method-header {
   font-size: 1.7rem;
   font-weight: 600;
-  color: #000000;
+  color: #000;
   line-height: 1.1;
   margin-bottom: 0.6rem;
 }
@@ -592,7 +595,7 @@ nav {
 .method-tagline {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #000000;
+  color: #ea2425;
   margin-bottom: 0.5rem;
   display: block;
 }
@@ -1610,6 +1613,26 @@ footer {
   gap: 4rem;
   text-align: right;
 }
+.fatigue-content-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  text-align: right;
+  align-items: center; 
+  justify-content: center;
+}
+.fatigue-content-2 img{
+   width: 45rem;
+  height: 15rem;
+  margin-top: 0;
+ object-fit: cover;
+  margin: 0 auto;
+
+  /* filter: drop-shadow(2px 2px 0 #000) 
+          drop-shadow(-2px -2px 0 #000)
+          drop-shadow(2px -2px 0 #000)
+          drop-shadow(-2px 2px 0 #000); */
+}
 
 .who-box {
   display: flex;
@@ -1641,7 +1664,7 @@ footer {
 .fatigue-aside .fatigue-content-block ,.fatigue-content-block-2 {
   text-align: left;
   background: transparent;
-  padding: 0rem 0 0rem 2.5rem;
+  padding: 0rem 0 0rem 1rem;
 }
 
 @media (max-width: 992px) {
