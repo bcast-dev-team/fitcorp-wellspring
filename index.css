@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  --primary: #ea2425; /* fitcorp Red */
+  --primary: #d50032; /* fitcorp Red */
   --primary-light: #ffebec;
   --secondary: #1a1a1a;
   --text-main: #333333;
@@ -117,7 +117,7 @@ h3 {
 }
 
 .get-started:hover {
-  background-color: #ea2425;
+  background-color: #d50032;
   transform: translateY(-1px);
 }
 
@@ -154,7 +154,7 @@ h3 {
 }
 
 .btn-primary:hover {
-  background-color: #ea2425;
+  background-color: #d50032;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(204, 31, 38, 0.3);
 }
@@ -595,7 +595,7 @@ nav {
 .method-tagline {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #ea2425;
+  color: #d50032;
   margin-bottom: 0.5rem;
   display: block;
 }
